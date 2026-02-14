@@ -1,46 +1,49 @@
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import { Calendar } from "lucide-react";
+const fortunerImage = new URL("../../assets/fortuner.jpg", import.meta.url).href;
+const axioFielderImage = new URL("../../assets/axio-fielder.jpg", import.meta.url).href;
+const nissanElgrandImage = new URL("../../assets/nissan-elgrand.png", import.meta.url).href;
 
 const vehicles = [
   {
     name: "NISSAN NOTE",
     category: "Economy",
-    image: "https://images.unsplash.com/photo-1687730594701-88cdea1ef5ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3aGl0ZSUyMG5pc3NhbiUyMG5vdGUlMjBoYXRjaGJhY2t8ZW58MXx8fHwxNzcwOTA1NzM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image: new URL("../../assets/nissan-note.jpg", import.meta.url).href,
     dailyRate: { currency: "USD", amount: 50 },
     weeklyRate: { currency: "USD", amount: 40 },
   },
   {
     name: "TOYOTA FIELDER",
     category: "Station Wagon",
-    image: "https://images.unsplash.com/photo-1642635852887-05a76551216a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3aGl0ZSUyMHRveW90YSUyMGZpZWxkZXIlMjBzdGF0aW9uJTIwd2Fnb258ZW58MXx8fHwxNzcwOTA1NzM5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image: new URL("../../assets/fielder.jpg", import.meta.url).href,
     dailyRate: { currency: "USD", amount: 50 },
     weeklyRate: { currency: "USD", amount: 40 },
   },
   {
     name: "GD6 KING CAB",
     category: "Pickup Truck",
-    image: "https://images.unsplash.com/photo-1714213624189-9a9fc8a0736a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3aGl0ZSUyMHRveW90YSUyMGhpbHV4JTIwcGlja3VwJTIwdHJ1Y2t8ZW58MXx8fHwxNzcwOTA1NzM5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image: new URL("../../assets/gd6-king-cab.png", import.meta.url).href,
     dailyRate: { currency: "USD", amount: 180 },
     weeklyRate: { currency: "USD", amount: 160 },
   },
   {
     name: "AXIO FIELDER",
     category: "Sedan",
-    image: "https://images.unsplash.com/photo-1762195340046-415140d8b1b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3aGl0ZSUyMHNlZGFuJTIwY2FyJTIwc2hvd3Jvb218ZW58MXx8fHwxNzcwOTA0NDY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image: axioFielderImage,
     dailyRate: { currency: "USD", amount: 50 },
     weeklyRate: { currency: "USD", amount: 40 },
   },
   {
     name: "NISSAN ELGRAND",
     category: "Luxury Van",
-    image: "https://images.unsplash.com/photo-1562443946-1f2a13b2ebba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBibHVlJTIwbWluaXZhbnxlbnwxfHx8fDE3NzA5MDQ3OTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image: nissanElgrandImage,
     dailyRate: { currency: "USD", amount: 60 },
     weeklyRate: { currency: "USD", amount: 55 },
   },
   {
     name: "FORTUNER",
     category: "SUV",
-    image: "https://images.unsplash.com/photo-1654704089788-5ac8eb863818?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxibGFjayUyMFNVViUyMHRveW90YSUyMGZvcnR1bmVyfGVufDF8fHx8MTc3MDkwNDc5OHww&ixlib=rb-4.1.0&q=80&w=1080",
+    image: fortunerImage,
     dailyRate: { currency: "USD", amount: 200 },
     weeklyRate: { currency: "USD", amount: 180 },
   },
@@ -48,24 +51,24 @@ const vehicles = [
 
 export function Fleet() {
   return (
-    <div className="pt-20 pb-20">
-      <div className="max-w-7xl mx-auto px-6">
+    <div className="pt-16 sm:pt-20 pb-16 sm:pb-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Page Header */}
-        <div className="text-center mb-16 mt-16">
-          <h1 className="text-5xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-10 sm:mb-16 mt-10 sm:mt-16">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Our <span className="text-[#E8B317]">Fleet</span>
           </h1>
-          <p className="text-gray-600 text-lg">
+          <p className="text-gray-600 text-base sm:text-lg">
             Choose from our premium selection of vehicles
           </p>
         </div>
 
         {/* Vehicle Grid */}
-        <div className="grid grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {vehicles.map((vehicle, index) => (
             <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
               {/* Vehicle Image */}
-              <div className="relative h-64">
+              <div className="relative h-48 sm:h-64">
                 <img
                   src={vehicle.image}
                   alt={vehicle.name}

@@ -1,44 +1,56 @@
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import { Facebook, Twitter, Instagram, MessageCircle, Phone, Mail, MapPin } from "lucide-react";
-import logo from "figma:asset/c517f2d5bb6f716930d5b92d199df92162ba7080.png";
+import logo from "@/assets/c517f2d5bb6f716930d5b92d199df92162ba7080.png";
 
 export function Footer() {
   return (
-    <footer className="bg-[#1a1f2e] text-gray-300 pt-16 pb-8">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-3 gap-12 mb-12">
+    <footer className="bg-[#1a1f2e] text-gray-300 pt-12 sm:pt-16 pb-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-12 mb-12">
           {/* Brand */}
-          <div>
+          <div className="sm:col-span-2 lg:col-span-1">
             <div className="mb-4">
-              <img src={logo} alt="Kilomile Car Rentals" className="h-20 brightness-0 invert" />
+              <img src={logo} alt="Kilomile Car Rentals" className="h-16 sm:h-20 object-contain" />
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
               Your trusted car rental partner in Zimbabwe. We provide quality vehicles and exceptional service for all your transportation needs.
             </p>
-            <div className="flex gap-4">
+            <div className="flex flex-col gap-3">
               <a
-                href="#"
-                className="w-10 h-10 bg-gray-700 hover:bg-[#E8B317] rounded flex items-center justify-center transition-colors"
+                href="https://www.facebook.com/KiloMileCarRental"
+                className="flex items-center gap-3 bg-gray-700 hover:bg-[#E8B317] rounded px-3 py-2 transition-colors"
+                target="_blank"
+                rel="noreferrer"
               >
                 <Facebook className="w-5 h-5" />
+                <span className="font-semibold text-gray-200">Kilo Mile Car Rental</span>
               </a>
               <a
-                href="#"
-                className="w-10 h-10 bg-gray-700 hover:bg-[#E8B317] rounded flex items-center justify-center transition-colors"
-              >
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 bg-gray-700 hover:bg-[#E8B317] rounded flex items-center justify-center transition-colors"
+                href="https://www.tiktok.com/@kilomilecarrental"
+                className="flex items-center gap-3 bg-gray-700 hover:bg-[#E8B317] rounded px-3 py-2 transition-colors"
+                target="_blank"
+                rel="noreferrer"
               >
                 <Instagram className="w-5 h-5" />
+                <span className="font-semibold text-gray-200">@kilomilecarrental</span>
               </a>
               <a
-                href="#"
-                className="w-10 h-10 bg-gray-700 hover:bg-[#E8B317] rounded flex items-center justify-center transition-colors"
+                href="https://twitter.com/KilomileCar"
+                className="flex items-center gap-3 bg-gray-700 hover:bg-[#E8B317] rounded px-3 py-2 transition-colors"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Twitter className="w-5 h-5" />
+                <span className="font-semibold text-gray-200">@KilomileCar</span>
+              </a>
+              <a
+                href="https://wa.me/263719367818"
+                className="flex items-center gap-3 bg-gray-700 hover:bg-[#E8B317] rounded px-3 py-2 transition-colors"
+                target="_blank"
+                rel="noreferrer"
               >
                 <MessageCircle className="w-5 h-5" />
+                <span className="font-semibold text-gray-200">WhatsApp</span>
               </a>
             </div>
           </div>
@@ -68,7 +80,7 @@ export function Footer() {
             <div className="flex flex-col gap-4">
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-[#E8B317] mt-0.5 flex-shrink-0" />
-                <span className="text-gray-400">All Over Zimbabwe</span>
+                <span className="text-gray-400">8388 Trubank Village Kadoma</span>
               </div>
               <div className="flex flex-col gap-2">
                 <div className="flex items-center gap-3">
@@ -77,7 +89,7 @@ export function Footer() {
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-[#E8B317] flex-shrink-0" />
-                  <span className="text-gray-400">+263 773367818</span>
+                  <span className="text-gray-400">+263 773730041</span>
                 </div>
               </div>
               <div className="flex items-center gap-3">

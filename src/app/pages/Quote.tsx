@@ -2,19 +2,19 @@ import { MapPin, Phone, Mail, AlertCircle } from "lucide-react";
 
 export function Quote() {
   return (
-    <div className="pt-20 pb-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6">
+    <div className="pt-16 sm:pt-20 pb-16 sm:pb-20 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Page Header */}
-        <div className="mb-12 mt-16">
-          <h1 className="text-5xl font-bold text-gray-900 mb-2">
+        <div className="mb-8 sm:mb-12 mt-10 sm:mt-16">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-2">
             Get a <span className="text-[#E8B317]">Quote</span>
           </h1>
-          <p className="text-gray-600 text-lg">
+          <p className="text-gray-600 text-base sm:text-lg">
             Fill out the form and we'll send you a personalized quotation for your rental needs
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
           {/* Left Column - Info */}
           <div>
             {/* Contact Info Cards */}
@@ -36,7 +36,7 @@ export function Quote() {
                 <div>
                   <h3 className="text-lg font-bold text-gray-900 mb-1">Phone</h3>
                   <p className="text-gray-600">+263 719367818</p>
-                  <p className="text-gray-600">+263 773367818</p>
+                  <p className="text-gray-600">+263 773730041</p>
                 </div>
               </div>
 
@@ -52,7 +52,7 @@ export function Quote() {
             </div>
 
             {/* Terms & Conditions */}
-            <div className="bg-[#fffbeb] border-l-4 border-[#E8B317] p-6 rounded-r-lg">
+            <div className="bg-[#fffbeb] border-l-4 border-[#E8B317] p-4 sm:p-6 rounded-r-lg">
               <div className="flex items-start gap-3 mb-4">
                 <AlertCircle className="w-6 h-6 text-[#E8B317] flex-shrink-0 mt-0.5" />
                 <h3 className="text-lg font-bold text-gray-900">Terms & Conditions</h3>
@@ -87,8 +87,8 @@ export function Quote() {
           </div>
 
           {/* Right Column - Form */}
-          <div className="bg-white rounded-xl shadow-lg p-8">
-            <form className="space-y-6">
+          <div className="bg-white rounded-xl shadow-lg p-6 sm:p-8">
+            <form className="space-y-5 sm:space-y-6">
               <div>
                 <label className="block text-gray-900 font-semibold mb-2">
                   Full Name <span className="text-red-500">*</span>
@@ -137,7 +137,7 @@ export function Quote() {
                 </select>
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-gray-900 font-semibold mb-2">
                     Pick-up Date <span className="text-red-500">*</span>
