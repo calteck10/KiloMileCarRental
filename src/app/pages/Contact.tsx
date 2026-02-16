@@ -39,9 +39,14 @@ export function Contact() {
             </div>
             <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">Email Us</h3>
             <p className="text-gray-600 mb-4">Send us your inquiries anytime</p>
-            <a href="mailto:info@kcr.co.zw" className="block text-[#E8B317] font-semibold text-base sm:text-lg hover:underline">
-              info@kcr.co.zw
-            </a>
+            <div className="space-y-2">
+              <a href="mailto:sales@kilomile.co.zw" className="block text-[#E8B317] font-semibold text-base sm:text-lg hover:underline">
+                sales@kilomile.co.zw
+              </a>
+              <a href="mailto:info@kilomile.co.zw" className="block text-[#E8B317] font-semibold text-base sm:text-lg hover:underline">
+                info@kilomile.co.zw
+              </a>
+            </div>
           </div>
 
           <div className="bg-white rounded-xl p-6 sm:p-8 shadow-lg text-center sm:col-span-2 lg:col-span-1">
