@@ -178,6 +178,7 @@ export function Quote() {
                     <option>Axio Fielder (Sedan)</option>
                     <option>Nissan Elgrand (Luxury Van)</option>
                     <option>Fortuner (SUV)</option>
+                    <option>Nissan X-Trail (SUV)</option>
                   </select>
                 </div>
 

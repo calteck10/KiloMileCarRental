@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Calendar } from "lucide-react";
-const fortunerImage = new URL("../../assets/fortuner.jpg", import.meta.url).href;
+const fortunerImage = new URL("../../assets/fortuner.png", import.meta.url).href;
 const axioFielderImage = new URL("../../assets/axio-fielder.jpg", import.meta.url).href;
 const nissanElgrandImage = new URL("../../assets/nissan-elgrand.png", import.meta.url).href;
 
@@ -46,6 +46,13 @@ const vehicles = [
     image: fortunerImage,
     dailyRate: { currency: "USD", amount: 200 },
     weeklyRate: { currency: "USD", amount: 180 },
+  },
+  {
+    name: "NISSAN X-TRAIL",
+    category: "SUV",
+    image: new URL("../../assets/nissan-xtrail.jpg", import.meta.url).href,
+    dailyRate: { currency: "USD", amount: 65 },
+    weeklyRate: { currency: "USD", amount: 60 },
   },
 ];
 
