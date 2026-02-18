@@ -108,7 +108,7 @@ export function Footer() {
 
         <div className="border-t border-gray-700 pt-8">
           <p className="text-center text-gray-400 text-sm">
-            © 2024 Kilomile Car Rental. All rights reserved.
+            © 2026 Kilomile Car Rental. All rights reserved.
           </p>
         </div>
       </div>
